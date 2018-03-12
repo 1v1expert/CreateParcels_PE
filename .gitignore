@@ -1,2 +1,5 @@
 settings.py
+config.json
+record.log
 .idea
+__pycache__
