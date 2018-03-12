@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 import json
 import requests
-import urllib3
 import settings
-
-urllib3.disable_warnings()
 
 POINTS = {
     '9997': "",
