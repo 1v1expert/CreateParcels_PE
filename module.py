@@ -4,7 +4,7 @@ import requests
 import settings
 
 POINTS = {
-    '9997': "",
+    '9997': "d93a80ff-5407-49c4-b0bc-eafab8bac5d7",
     '9996': "a593bd26-52b4-40af-a4dc-88b0ee5d5355",
     '217': "7cc6effb-2347-457d-941d-aad91cdd461e",
     '219': "e11acf1e-a386-4c89-809c-48195ea84874",
@@ -78,4 +78,3 @@ if __name__=='__main__':
             number = input('Номер прежней посылки: ')
             test = input('Тестовый ? Yes/No: ')
             create_range(int(count), int(number), test, point)
-            print(point, count, test)
