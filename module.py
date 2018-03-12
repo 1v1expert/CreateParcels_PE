@@ -9,6 +9,14 @@ urllib3.disable_warnings()
 POINTS = {
     '9997': "",
     '9996': "a593bd26-52b4-40af-a4dc-88b0ee5d5355",
+    '217': "7cc6effb-2347-457d-941d-aad91cdd461e",
+    '219': "e11acf1e-a386-4c89-809c-48195ea84874",
+    '229': "84d5cad7-3cf6-40ac-95a0-2619cfbed6f4",
+    '230': "bce60339-cde8-4f80-b04e-ecfbd018bea3",
+    '234': "7d3ae8be-7b37-4817-8ecf-1723d87f649e",
+    '238': "e09298f0-a3ff-4dfc-a9a0-76dd1b6379e7",
+    '239': "b5aa8a33-cca2-4d50-83e3-cd4a6aae5d62"
+    
 }
 
 def create_range(count, number, test, point):
