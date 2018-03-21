@@ -18,7 +18,7 @@ POINTS = {
 
 def create_range(count, number, test, point):
     for i in range(1, count + 1):
-        order_id = 'field_test' + str(number + i)
+        order_id = 'test_' + str(number + i)
         barcodes = str(number + 1000000 + i)
         
         if test == ('yes' or 'да'):
@@ -28,8 +28,8 @@ def create_range(count, number, test, point):
             token = settings.TOKEN_live
             url = settings.URL_live
             
-        phone = '+79852296756'
-        email = '1v1expert@gmail.com'
+        phone = '+79689615250'
+        email = 'pz@pulse-express.ru'
 
         response = " \n" + str(create_parcel(order_id, barcodes, phone, email, point, token, url))
         line = '\nAnounce ' + order_id + ' ' + barcodes + ' ' + point + response + '\n'
