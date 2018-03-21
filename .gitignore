@@ -1,5 +1,5 @@
 settings.py
 config.json
-
+*.pyc
 .idea
 __pycache__
