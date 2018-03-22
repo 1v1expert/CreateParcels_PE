@@ -27,9 +27,11 @@ def create_range(count, number, test, point):
         else:
             token = settings.TOKEN_live
             url = settings.URL_live
-            
-        phone = '+79689615250'
-        email = 'pz@pulse-express.ru'
+
+        phone = '+79852296756'
+        email = 'sepstamp@mail.ru'    
+        #phone = '+79689615250'
+        #email = 'pz@pulse-express.ru'
 
         response = " \n" + str(create_parcel(order_id, barcodes, phone, email, point, token, url))
         line = '\nAnounce ' + order_id + ' ' + barcodes + ' ' + point + response + '\n'
