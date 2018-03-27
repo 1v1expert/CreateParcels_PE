@@ -19,11 +19,11 @@ POINTS = {
 
 def create_range(count, number, test, point):
     for i in range(1, count + 1):
-        order_id = 'UN' + point + '000' + str(number + i)
-        barcodes_1 = point + '00' + str(number + i)
-        barcodes_2 = point + '00' + str(number + i)
-        barcodes = barcodes_1 + barcodes_2
-        #barcodes = str(number + 1000000 + i)
+        order_id = 'test_' + point + '_' + str(number + i)
+        #barcodes_1 = point + '0' + str(number + i)
+        #barcodes_2 = point + '0' + str(number + i)
+        #barcodes = barcodes_1 + barcodes_2
+        barcodes = str(number + 2000000 + i)
         
         if test == ('yes' or 'да'):
             token = settings.TOKEN_test
@@ -65,9 +65,9 @@ def create_parcel(order_id, barcodes, phone, email, point, token, url):
                 "phone": phone,
                 "email": email
             },
-            "cod": 10,
+            "cod": 0,
             "declared_price": 0,
-            "partner_service_fee": 10
+            "partner_service_fee": 0
         }
         ]
     }
