@@ -4,6 +4,7 @@ import requests
 import settings
 
 POINTS = {
+    '9999': "7d158480-216b-4d95-b863-d83a299d1c1b",
     '9997': "d93a80ff-5407-49c4-b0bc-eafab8bac5d7",
     '9996': "a593bd26-52b4-40af-a4dc-88b0ee5d5355",
     '217': "7cc6effb-2347-457d-941d-aad91cdd461e",
@@ -18,8 +19,11 @@ POINTS = {
 
 def create_range(count, number, test, point):
     for i in range(1, count + 1):
-        order_id = 'test_' + str(number + i)
-        barcodes = str(number + 1000000 + i)
+        order_id = 'UN' + point + '000' + str(number + i)
+        barcodes_1 = point + '00' + str(number + i)
+        barcodes_2 = point + '00' + str(number + i)
+        barcodes = barcodes_1 + barcodes_2
+        #barcodes = str(number + 1000000 + i)
         
         if test == ('yes' or 'да'):
             token = settings.TOKEN_test
@@ -29,7 +33,7 @@ def create_range(count, number, test, point):
             url = settings.URL_live
 
         phone = '+79852296756'
-        email = 'sepstamp@mail.ru'    
+        email = 'sepstamp@mail.ru'
         #phone = '+79689615250'
         #email = 'pz@pulse-express.ru'
 
@@ -61,9 +65,9 @@ def create_parcel(order_id, barcodes, phone, email, point, token, url):
                 "phone": phone,
                 "email": email
             },
-            "cod": 0,
+            "cod": 10,
             "declared_price": 0,
-            "partner_service_fee": 0
+            "partner_service_fee": 10
         }
         ]
     }
