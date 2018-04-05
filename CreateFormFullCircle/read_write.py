@@ -59,7 +59,7 @@ class gen_html():
 			telephone = line['telephone']
 			code128 = '<img alt="Barcoded value' + order_id + '"src="http://bwipjs-api.metafloor.com/?bcid=code128&text=' + order_id + '&includetext">'
 			code39 = '<img src="https://barcode.tec-it.com/barcode.ashx?data=' + order_id + '&code=Code39&multiplebarcodes=false&translate-esc=false&unit=Fit&dpi=96&imagetype=Gif&rotation=0&color=%23000000&bgcolor=%23ffffff&qunit=Mm&quiet=0&dmsize=Default" alt="Barcoded value"/>'
-			#KOIR = 
+			#KOIR =
 			Data_Matrix = '<img src="https://barcode.tec-it.com/barcode.ashx?data=' + order_id + '&code=DataMatrix&multiplebarcodes=false&translate-esc=false&authentication=None&ssid=%D0%98%D0%BC%D1%8F+%D1%81%D0%B5%D1%82%D0%B8+(SSID)&password=&unit=Fit&dpi=96&imagetype=Gif&rotation=0&color=%23000000&bgcolor=%23ffffff&qunit=Mm&quiet=0&dmsize=Default" alt="Barcoded value"/>'
 			EAN128 = '<img src="https://barcode.tec-it.com/barcode.ashx?data=' + order_id + '&code=EANUCC128&multiplebarcodes=false&translate-esc=false&authentication=None&ssid=%D0%98%D0%BC%D1%8F+%D1%81%D0%B5%D1%82%D0%B8+(SSID)&password=&unit=Fit&dpi=96&imagetype=Gif&rotation=0&color=%23000000&bgcolor=%23ffffff&qunit=Mm&quiet=0&dmsize=Default" alt="Barcoded value"/>'
 			EAN13 =  '<img src="https://barcode.tec-it.com/barcode.ashx?data=' + barcode + '&code=EAN13&multiplebarcodes=false&translate-esc=false&authentication=None&ssid=%D0%98%D0%BC%D1%8F+%D1%81%D0%B5%D1%82%D0%B8+(SSID)&password=&unit=Fit&dpi=96&imagetype=Gif&rotation=0&color=%23000000&bgcolor=%23ffffff&qunit=Mm&quiet=0&dmsize=Default" alt="Barcoded value"/>'
